@@ -17,9 +17,9 @@ keywords = {"1": ["仮設住宅", "半壊", "全壊","住宅被害", "家屋","�
 for i in range(len(rows)):
     for k in range(1,8):
         keyword = keywords[str(k)] 
-        label = any(word in rows['sentence'].iloc[i] for word in keyword)
+        label = any(word in rows.loc[i, 'sentence'] for word in keyword)
         flag = 1 if label == True else 0
-        rows[seven[k-1]].iloc[i] = flag
+        rows.loc[i,seven[k-1]] = flag
 
 
-rows.head()
+print(rows.head())
