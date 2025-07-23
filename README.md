@@ -1,2 +1,4 @@
-# Seven element of life recovery
-This is an example for seven element classification (detection)
+# Dictionary method
+The examples for:
+* Related paragraph detection
+* Recovery elements identification
